@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Détecteur de Fake News — Projet ESP</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f6fa;
+      color: #2f3640;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #4b7bec, #3867d6);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #3867d6;
+      margin-top: 0;
+    }
+    .badge-group span {
+      display: inline-block;
+      background: #dcdde1;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 0.9rem;
+      color: #2f3640;
+    }
+    .section {
+      margin-bottom: 35px;
+    }
+    .button {
+      display: inline-block;
+      background: #3867d6;
+      color: white;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+    .button:hover {
+      background: #2958b8;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      color: #7f8fa6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Détecteur de Fake News</h1>
+    <p>Analyse automatique, preuves, explicabilité. Un projet ESP innovant et ambitieux.</p>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>🎯 Problème</h2>
+      <p>La désinformation se diffuse plus vite que la capacité humaine à la vérifier. Aucune solution francophone n’offre une analyse automatique, explicable et fiable des informations.</p>
+    </div>
+
+    <div class="section">
+      <h2>💡 Notre solution</h2>
+      <p>Un système IA complet capable de :</p>
+      <ul>
+        <li>Extraire les revendications factuelles d’un texte</li>
+        <li>Rechercher des preuves dans des sources fiables (Wikipedia, fact-checkers)</li>
+        <li>Évaluer la crédibilité via IA (NLP, Retrieval, NLI)</li>
+        <li>Fournir un score <strong>et une explication claire</strong></li>
+      </ul>
+      <a class="button" href="#">Voir la présentation PDF</a>
+    </div>
+
+    <div class="section">
+      <h2>🧬 Pipeline IA</h2>
+      <pre>
+Texte / URL → Prétraitement → Claim Detection → Retrieval (ES + FAISS)
+→ Entailment (NLI) → Agrégation → Score + Explication
+      </pre>
+    </div>
+
+    <div class="section">
+      <h2>🛠️ Technologies</h2>
+      <div class="badge-group">
+        <span>Python</span><span>FastAPI</span><span>PyTorch</span>
+        <span>HuggingFace</span><span>React</span><span>FAISS</span>
+        <span>Elasticsearch</span><span>Docker</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>👥 Équipe recherchée</h2>
+      <ul>
+        <li>2 développeurs IA / NLP</li>
+        <li>2 développeurs backend</li>
+        <li>1 développeur frontend</li>
+        <li>1 DevOps</li>
+        <li>1 Data Engineer / QA</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🏷️ Tags</h2>
+      <div class="badge-group">
+        <span>#IA</span><span>#NLP</span><span>#FakeNews</span>
+        <span>#MachineLearning</span><span>#ExplainableAI</span>
+        <span>#Python</span><span>#DeepLearning</span>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Projet ESP — Master Architecte Systèmes & Réseaux
+  </footer>
+
+</body>
+</html>
